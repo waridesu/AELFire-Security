@@ -94,7 +94,6 @@
                         <label for="formMonthly">Monthly Payments:</label>
                         <input id="formMonthly" type="number" readonly>
                         </div>
-
                     </div>
                 </li>
             </ul>
@@ -208,32 +207,73 @@
             their security requirements. Add your company to our ever-expanding list of well-known UK organisations who
             are always keen to recommend us to others!</p>
     </div>
-    <div class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <div>
-                        <p>“1The whole team from our Account Manager to the Engineers who install and maintain the systems are exceptionally knowledgeable and I cannot recommend AEL highly enough”.</p>
-                        <p>Anthony Buck, IT Manager, Fine Lady Bakeries Ltd</p>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <div>
-                        <p>“2The whole team from our Account Manager to the Engineers who install and maintain the systems are exceptionally knowledgeable and I cannot recommend AEL highly enough”.</p>
-                        <p>Anthony Buck, IT Manager, Fine Lady Bakeries Ltd</p>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <div>
-                        <p>“3The whole team from our Account Manager to the Engineers who install and maintain the systems are exceptionally knowledgeable and I cannot recommend AEL highly enough”.</p>
-                        <p>Anthony Buck, IT Manager, Fine Lady Bakeries Ltd</p>
-                    </div>
-                </li>
-            </ul>
+    <div class="slider-container">
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="slider-items">
+                            <img src="img/Ladylogo.png">
+                            <div class="slider-card">
+                                <p>“The whole team from our Account Manager to the Engineers who install and maintain
+                                    the systems are exceptionally knowledgeable and I cannot recommend AEL highly
+                                    enough”.</p>
+                                <p>Anthony Buck, IT Manager, Fine Lady Bakeries Ltd</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slider-items">
+                            <img src="img/Ladylogo.png">
+                            <div class="slider-card">
+                                <p>“The whole team from our Account Manager to the Engineers who install and maintain
+                                    the systems are exceptionally knowledgeable and I cannot recommend AEL highly
+                                    enough”.</p>
+                                <p>Anthony Buck, IT Manager, Fine Lady Bakeries Ltd</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slider-items">
+                            <img src="img/Ladylogo.png">
+                            <div class="slider-card">
+                                <p>“The whole team from our Account Manager to the Engineers who install and maintain
+                                    the systems are exceptionally knowledgeable and I cannot recommend AEL highly
+                                    enough”.</p>
+                                <p>Anthony Buck, IT Manager, Fine Lady Bakeries Ltd</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
+        <button type="button" class="slider-button">GET YOUR FREE, NO OBLIGATION FINANCE QUOTE</button>
     </div>
     <footer>
-
+        <div class="information-container">
+            <div class="location">
+                <p>AEL Fire & Security<br>
+                    Innovation House, Leaside,<br>
+                    Aycliffe Business Park,<br>
+                    Durham, DL5 6DE</p>
+            </div>
+            <div class="socialNetwork">
+                <p class="number">0333 344 3717</p>
+                <p class="socialIcon">
+                    <span></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>© AEL Systems Ltd trading as AEL Fire & Security
+                    Company Number 04629289</p>
+            </div>
+        </div>
+        <p class="quotes">*Quotes displayed are estimates only. Interest, fees, and finance options may vary and are subject to status.
+            All finance options </p>
     </footer>
 </div>
 <script src="js/splide.min.js"></script>
@@ -242,8 +282,8 @@
     new Splide('.splide', {
         type: 'loop',
         padding: {
-            right: '20%',
-            left: '20%',
+            right: '15vw',
+            left: '15vw',
         },
         arrows:false,
         slideFocus: true

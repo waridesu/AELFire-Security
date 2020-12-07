@@ -13,3 +13,5 @@ addEventListener('change',e=()=>{
 const sendMail = ()=>{
 
 }
+//сложные проценты
+//(сумма*%)
