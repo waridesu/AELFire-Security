@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6ff94ef-b06f-4ab5-87b9-1d6de8f29d3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/chevron-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/splide.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/themes/splide-default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/themes/splide-sea-green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/themes/splide-skyblue.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/splide.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -35,6 +40,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -59,6 +65,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AELFire&amp;Security\css\themes" />
+      <recent name="D:\AELFire&amp;Security\css" />
+      <recent name="D:\AELFire&amp;Security\js" />
       <recent name="D:\AELFire&amp;Security\img" />
     </key>
   </component>
@@ -73,7 +82,8 @@
       <workItem from="1607251580090" duration="42775000" />
       <workItem from="1607297623883" duration="96000" />
       <workItem from="1607319330653" duration="1004000" />
-      <workItem from="1607320427758" duration="11218000" />
+      <workItem from="1607320427758" duration="21521000" />
+      <workItem from="1607343676117" duration="4777000" />
     </task>
     <servers />
   </component>
@@ -90,6 +100,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1233" y="422" key="#Chrome_Settings" timestamp="1607321172486">

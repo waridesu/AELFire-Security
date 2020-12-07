@@ -408,26 +408,60 @@ form li div {
     margin: 7vw auto;
 }
 .slider-container {
-    background-image: url("../img/04.png");
+    background-color: #02b1f3;
+    padding: 100px 0 55px;
+    font-size: 24px;
+    letter-spacing: 1.2px;
 }
-.slides-wrapper{
+
+.viewport {
+    width: 1350px;
+}
+
+.slider .item {
+    margin: 0 79px;
+}
+
+.slider .img-container {
+    width: 125px;
+    height: 125px;
+}
+
+.slider .text {
+    line-height: 36px;
+    margin: 30px auto;
+}
+
+.slider-container ul {
+    margin: 48px auto 0;
+    height: 38px;
+}
+
+.slider-container ul li {
+    width: 19.2px;
+    height: 12px;
+    margin: 0 14px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+.splide__slide{
+    opacity: 50%;
+}
+.splide__slide+.is-active{
+    opacity: unset;
+}
+.sendInput div{
     display: flex;
 }
-.slides-wrapper .item{
-    margin: 40px 20px;
-    padding: 20px 10px;
-    border-radius: 20px;
-    background-color: white;
-    width: 30%;
-    position: relative;
+.sendInput label{
+    color: black;
+    margin: .5vw 0;
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 0;
 }
-.slides-wrapper .item:before{
-    content:"\A";
-    border-style: solid;
-    border-width: 20px 30px 20px 0;
-    border-color: transparent white transparent transparent;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -29px;
+.sendInput input{
+    border: none;
+    outline: none;
+    text-align: center;
 }
