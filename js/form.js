@@ -5,13 +5,9 @@ let formTax = document.getElementById('formTax')
 let formMonthly = document.getElementById('formMonthly')
 
 
-addEventListener('change',e=()=>{
+addEventListener('change',e=(amountTax)=>{
+    amountTax=Array.from({length: duration.value}). reduce((curr) => curr * 1.19, amount.value)
     formAmount.value = amount.value
-    formTax.value = (amount.value*duration.value*0.19).toFixed(2)
-    formMonthly.value = (((amount.value*duration.value)*formTax.value)/duration.value).toFixed(2)
+    formTax.value = (amountTax-amount.value).toFixed(2)
+    formMonthly.value = (amountTax/(duration.value*12)).toFixed(2)
 })
-const sendMail = ()=>{
-
-}
-//сложные проценты
-//(сумма*%)

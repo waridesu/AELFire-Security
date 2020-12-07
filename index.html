@@ -36,41 +36,41 @@
                 no-obligation quote to see how easy and affordable it is to ensure your company's fire and security
                 compliance.</p>
         </article>
-        <form action="mailto: waridesu@gmail.com" method="post" enctype="text/plain" class="calculation-form">
+        <form action="sendForm.php" class="calculation-form">
             <h2>Get Your Free, No-Obligation Quote For Affordable Monthly Payments*</h2>
             <ul>
                 <li>
                     <div class="input-container">
-                        <label for="name">Name</label>
-                        <input id="name">
+                        <label  for="name">Name</label>
+                        <input name="name" id="name">
                     </div>
                     <div class="input-container">
                         <label for="company">Company</label>
-                        <input id="company">
+                        <input name="company" id="company">
                     </div>
                 </li>
                 <li>
                     <div class="input-container">
-                        <label for="phone">Phone</label>
-                        <input id="phone">
+                        <label  for="phone">Phone</label>
+                        <input name="phone" id="phone">
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input id="email">
+                        <input name="email" id="email">
                     </div>
                 </li>
                 <li>
-                    <div class="input-container">
+                    <div class="input-container range">
                         <label for="amount">Amount</label>
-                        <input id="amount" type="range" value="1" min="1" max="100" step="1">
+                        <input name="amount" id="amount" type="range" value="5000" min="5000" max="100000" step="5000">
                         <div class="input-annotation">
                             <p>&#163 5k</p>
                             <p>&#163 100k</p>
                         </div>
                     </div>
-                    <div class="input-container">
+                    <div class="input-container range">
                     <label for="duration">Duration</label>
-                    <input id="duration" type="range" value="1" min="1" max="5" step="1">
+                    <input name="duration" id="duration" type="range" value="1" min="1" max="5" step="1">
                     <div class="input-annotation">
                             <p>2 years</p>
                             <p>5 years</p>
@@ -83,16 +83,16 @@
                     </div>
                     <div class="input-container sendInput">
                         <div>
-                        <label for="formAmount">Amount:</label>
+                        <label for="formAmount">Amount: &#163</label>
                         <input id="formAmount" type="number" readonly>
                         </div>
                         <div>
-                        <label for="formTax">Tax Relief:</label>
-                        <input id="formTax" type="number" readonly>
+                        <label for="formTax">Tax Relief: &#163</label>
+                        <input name="formTax" id="formTax" type="number" readonly>
                         </div>
                         <div>
-                        <label for="formMonthly">Monthly Payments:</label>
-                        <input id="formMonthly" type="number" readonly>
+                        <label for="formMonthly">Mthly Payments: &#163</label>
+                        <input name="formMonthly" id="formMonthly" type="number" readonly>
                         </div>
                     </div>
                 </li>
