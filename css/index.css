@@ -445,7 +445,7 @@ form li div {
     width: 6vw;
     height: 6vw;
     border-radius: 50%;
-    box-shadow: 0 0 10px 10px #000000;
+    box-shadow: 2px 4px 4px 0 #00b1f5;
 }
 .slider-card {
     position: relative;
