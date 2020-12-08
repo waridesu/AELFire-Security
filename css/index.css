@@ -158,7 +158,6 @@ form li div {
     border-radius: .5vw;
     font-size: 1.5vw;
     font-weight: bolder;
-    box-shadow: 5px 5px 10px 5px #00b1f5;
 }
 
 .advantages {
@@ -220,20 +219,25 @@ form li div {
     font-family: "Roboto Slab", sans-serif;
     font-size: 1.7vw;
 }
-.card-price div {
+.card-price .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
-    height: 28vw;
+    height: 31vw;
     max-width: 455px;
     width: 25%;
     text-align: left;
     color: white;
     background-image: linear-gradient(to bottom, #00b1f5, #5ed2ff);;
-    padding: 90px 20px 20px;
+    padding: 90px 2.2vw 2.2vw;
     margin: 40px 0;
     border-radius: 20px;
 }
-
-.card-price div:before {
+.card-container .bottom-price{
+    margin: 0;
+}
+.card-price .card-container:before {
     position: absolute;
     display: block;
     top: -50px;
@@ -254,13 +258,6 @@ form li div {
 .card-price .third:before {
     background-image: url("../img/calc.png");
 }
-
-.bottom-price {
-    position: absolute;
-    bottom: 0;
-    margin-right: 20px;
-}
-
 .system-text {
     font-size: 1.3vw;
     width: 50vw;
@@ -280,7 +277,6 @@ form li div {
     letter-spacing: .05vw;
     word-spacing: .05vw;
     font-weight: bold;
-    box-shadow: .2vw .2vw .4vw .2vw #08237e;
     margin: 2vw 0;
 }
 
@@ -372,6 +368,7 @@ form li div {
     content: "";
     background-image: url("../img/chevron-right.png");
     background-repeat: no-repeat;
+    background-size: contain;
     width: .5vw;
     height: 1vw;
     color: #78daff;
@@ -445,7 +442,6 @@ form li div {
     width: 6vw;
     height: 6vw;
     border-radius: 50%;
-    box-shadow: 2px 4px 4px 0 #00b1f5;
 }
 .slider-card {
     position: relative;
@@ -493,13 +489,14 @@ form li div {
 
 .slider-button {
     font-size: 1.4vw;
-    word-spacing: .5vw;
+    letter-spacing: 1px;
     padding: 1.4vw 2.5vw;
     margin: 3.5vw 0 6vw;
     border: none;
     border-radius: 10px;
     color: #08237e;
     background-color: #fff;
+    font-weight: bolder;
 }
 
 footer {
@@ -546,10 +543,10 @@ footer {
 }
 .socialIcon{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.socialIcon span {
+.socialIcon a {
     display: block;
     background-image: url("../img/facebook.png");
     background-size: contain;
@@ -605,5 +602,19 @@ input[type=range]::-webkit-slider-runnable-track {
     background-color: #22bffc;
     border-radius: 30px;
 }
-
-
+.button-shadow {
+    -webkit-box-shadow: 0 8px 32px 0;
+    -moz-box-shadow: 0 8px 32px 0 rgba(36,144,228,0.61);
+    box-shadow: 0 8px 32px 0 rgba(36,144,228,0.61);
+}
+.button-shadow:hover{
+    -webkit-box-shadow: 0 8px 32px 0 rgba(8,35,126,0.61);
+    -moz-box-shadow: 0 8px 32px 0 rgba(8,35,126,0.61);
+    box-shadow: 0 8px 32px 0 rgba(8,35,126,0.61);
+}
+.system-text-padding{
+    padding: 3vw 0;
+}
+.system-text-padding .system-text{
+    margin: 2vw auto;
+}
