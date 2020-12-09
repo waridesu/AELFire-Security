@@ -14,12 +14,12 @@
 
     $body_message = 'From: ' . $name . "\r\n";
     $body_message .= 'company: ' . $company . "\r\n";
-    $body_message .= 'Phone: ' . $phone;
+    $body_message .= 'Phone: ' . $phone . "\r\n";
     $body_message .= 'E-mail: ' . $mail_from . "\r\n";
-    $body_message .= 'amount: ' . $amount;
-    $body_message .= 'duration: ' . $duration;
-    $body_message .= 'formTax: ' . $formTax;
-    $body_message .= 'formMonthly: ' . $formMonthly;
+    $body_message .= 'amount: ' . $amount . "\r\n";
+    $body_message .= 'duration: ' . $duration . "\r\n";
+    $body_message .= 'formTax: ' . $formTax . "\r\n";
+    $body_message .= 'formMonthly: ' . $formMonthly . "\r\n";
 
     $headers = 'From: ' . $mail_from . "\r\n";
     $headers .= 'Reply-To: ' . $mail_from . "\r\n";
