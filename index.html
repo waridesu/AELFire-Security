@@ -63,7 +63,7 @@
                 <li>
                     <div class="input-container range">
                         <label for="amount">Amount</label>
-                        <input name="amount" id="amount" type="range" value="5000" min="5000" max="100000" step="5000">
+                        <input name="amount" id="amount" type="range" value="5" min="5" max="100" step="5">
                         <div class="input-annotation">
                             <p>&#163;5k</p>
                             <p>&#163;100k</p>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="input-container range">
                         <label for="duration">Duration</label>
-                        <input name="duration" id="duration" type="range" value="1" min="1" max="5" step="1">
+                        <input name="duration" id="duration" type="range" value="2" min="2" max="5" step="1">
                         <div class="input-annotation">
                             <p>2 years</p>
                             <p>5 years</p>
@@ -84,16 +84,16 @@
                     </div>
                     <div class="input-container sendInput">
                         <div>
-                            <label for="formAmount">Amount:</label>
-                            <input id="formAmount" type="number" readonly>
+                            <label for="formAmount">Amount: </label>
+                            <input id="formAmount" readonly>
                         </div>
                         <div>
-                            <label for="formTax">Tax Relief:</label>
-                            <input name="formTax" id="formTax" type="number" readonly>
+                            <label for="formTax">Tax Relief: </label>
+                            <input name="formTax" id="formTax" readonly>
                         </div>
                         <div>
-                            <label for="formMonthly">Monthly Payments:</label>
-                            <input name="formMonthly" id="formMonthly" type="number" readonly>
+                            <label for="formMonthly">Mthly Payments: </label>
+                            <input class="month" name="formMonthly" id="formMonthly" readonly>
                         </div>
                     </div>
                 </li>
