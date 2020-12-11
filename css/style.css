@@ -88,7 +88,7 @@ header img {
     text-align: center;
     margin: unset;
     padding: 0 1.2vw 2vw;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 form ul {
@@ -176,6 +176,7 @@ form li div {
     height: 4vw;
     width: 4vw;
     background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
 }
 
 .advantages .second:before {
@@ -224,7 +225,7 @@ form li div {
     color: white;
     background-image: linear-gradient(to bottom, #00b1f5, #5ed2ff);;
     padding: 6vw 2.2vw 2.2vw;
-    margin: 40px 0;
+    margin: 4vw 0;
     border-radius: 20px;
 }
 .card-container .bottom-price{
@@ -251,16 +252,19 @@ form li div {
 .card-price .third:before {
     background-image: url("../img/calc.png");
 }
+
 .system-text {
     font-size: 1.3vw;
     width: 50vw;
     margin: 5vw auto;
     line-height: 4vw;
+    padding: 0;
 }
 
-.less{
+.less {
     width: 40vw;
 }
+
 .about-system-button {
     padding: 1.2vw 3vw;
     background-color: #08237e;
@@ -443,7 +447,7 @@ form li div {
     border-radius: 10px;
     padding: 1vw 2.5vw;
     font-size: 1.3vw;
-    margin-left: 30px;
+    margin-left: 3vw;
 }
 .slider-card p{
     font-style: italic;
@@ -652,7 +656,7 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .calculation-form, .calculation .about-calculation {
-        width: 60vw;
+        width: fit-content;
     }
 
     .calculation-form h2 {
@@ -664,24 +668,137 @@ input[type=range]::-webkit-slider-runnable-track {
         border-radius: 5px;
     }
 
-    .input-container input, .sendInput label {
-        font-size: 2.1vw;
-        line-height: 3vw;
+    .input-container label, .input-annotation p, .quotes {
+        font-size: 1.5vw;
     }
-    .input-container label, .input-annotation p{
-        font-size: 1vw;
+
+    .system-text,
+    .wrap_image p,
+    .wrap_image_button p,
+    .card-container p,
+    .input-container input,
+    .sendInput label,
+    .sendInput input,
+    .about-calculation p,
+    .five-with-icon p,
+    .advantages p {
+        font-size: 2.5vw;
+        line-height: 5vw;
     }
-    .sendInput label, .sendInput input {
-        margin: 0;
-        line-height: 3vw;
+
+    .advantages p {
+        width: 30%;
+        padding-left: 8vw;
+    }
+
+    .advantages p:before {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .five-with-icon p {
+        padding-top: 10vw;
+    }
+
+    .partner-logos img {
+        height: 9vw;
+    }
+
+    .partner-logos .first {
+        height: 7vw;
+    }
+
+
+    .five-with-icon p:before {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .about-system h2, .wrap_image h2, .wrap_image_button h2 {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .wrap_image_button {
+        background-position: center;
+    }
+
+    .button-shadow, .slider-card, .wrap_image_button button, .information-container p, .number, .header-contacts a {
         font-size: 2vw;
     }
-    .card-price .card-container {
-        width: 60vw;
-        margin: 7vw auto 0;
-        height: 20vw;
+
+    .header-contacts a {
+        padding-left: 7vw;
     }
+
+    .header-contacts a:before {
+        height: 2.5vw;
+        width: 2.5vw;
+    }
+
+    .system-text li {
+        padding-left: 12px;
+    }
+
+    .system-text, .wrap_image p, .wrap_image h2, .wrap_image_button h2, .wrap_image_button p {
+        width: 100%;
+    }
+
+
+    .system-text-padding .system-text, .system-text-padding li {
+        width: fit-content;
+        margin: 2vw 6vw;
+    }
+
+    .system-text-padding .less {
+        margin: 2vw 0;
+    }
+
+    .system-text li:before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .card-container h3 {
+        font-size: 20px;
+    }
+
+    .five-with-icon, .advantages {
+        padding: 1.5vw 2vw;
+    }
+
+    .card-price .card-container {
+        width: 80%;
+        margin: 12% auto 0;
+        padding: 10% 4% 4%;
+        height: 45%;
+    }
+
+    .card-price .card-container:before {
+        top: -10%;
+        width: 32%;
+        height: 32%;
+    }
+
     .splide__track {
         margin: 6vw 0;
+    }
+
+    .slider-items {
+        margin: 0;
+    }
+
+    .form-button {
+        margin: 5vw 0;
+    }
+
+    @media (max-width: 500px) {
+        .system-text, .wrap_image p, .wrap_image_button p, .card-container p, .input-container input, .sendInput label, .sendInput input, .about-calculation p {
+            font-size: 3vw;
+        }
+
+        .input-container label, .input-annotation p {
+            font-size: 2vw;
+        }
     }
 }
