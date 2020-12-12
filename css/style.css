@@ -1,3 +1,75 @@
+@media (max-width: 1700px) {
+    body {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1500px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 4px;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 3px;
+    }
+}
+
 body {
     margin: unset;
     font-family: 'Open Sans', sans-serif;
@@ -5,29 +77,51 @@ body {
     letter-spacing: 1px;
 }
 
-header, .calculation, .advantages {
+header, .advantages {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4vw 8.5vw;
+    padding: 3em 8em;
+}
+
+.calculation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../img/01.png");
+    background-position: center;
+    background-size: cover;
+    padding: 6em 8em 5em;
 }
 
 header img {
-    width: 16vw;
+    width: 16em;
 }
+
 .header-contacts {
     display: flex;
     align-content: center;
 }
+
+.header-contacts a {
+    font-size: 1.14em;
+    text-decoration: none;
+    color: #08237e;
+    position: relative;
+    padding-left: 2.5em;
+}
+
 .header-contacts a:before {
     display: block;
     content: '';
     position: absolute;
-    top: -42%;
-    transform: translateY(58%);
-    left: 3vw;
-    height: 1.5vw;
-    width: 1.5vw;
+    top: -50%;
+    transform: translateY(50%);
+    left: .5em;
+    height: 1.46em;
+    width: 1.46em;
     background-image: url("../img/phone-img.png");
     background-size: contain;
     background-position: center;
@@ -38,25 +132,16 @@ header img {
     background-image: url("../img/mail-img.png");
 }
 
-.header-contacts a {
-    text-decoration: unset;
-    font-size: 1.19vw;
-    color: #08237e;
-    position: relative;
-    padding-left: 5vw;
-    font-weight: 400;
-
-}
-
-.calculation {
-    background-image: url("../img/01.png");
-    background-position: center;
-    background-size: cover;
-    padding: 3.8vw 8.5vw;
-}
-
 .calculation article {
-    width: 40%;
+    width: 28em;
+}
+
+.calculation-form {
+    width: 38em;
+    height: 100%;
+    background-color: white;
+    border-radius: .5em;
+    padding: 1.5em 1em;
 }
 
 .about-calculation {
@@ -65,29 +150,40 @@ header img {
 
 .about-calculation h2 {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 3vw;
-    line-height: 3.3vw;
+    font-size: 2.8em;
+    line-height: 1.2em;
     font-weight: 600;
+    padding-right: .8em;
 }
 
-.about-calculation p {
-    font-size: 1.75vw;
+.about-calculation p,
+form input,
+.card-price p,
+.wrap_image p,
+.wrap_image_button p,
+.slider-card p,
+.sendInput label,
+.sendInput input {
+    font-size: 1.2em;
+    line-height: 2.4em;
 }
 
-.calculation-form {
-    max-width: 840px;
-    width: 45%;
-    background-color: white;
-    border-radius: .5vw;
-    padding: 1.5vw 1vw;
+.advantages p,
+form button,
+.about-system-button,
+.wrap_image_button button {
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: bold;
 }
+
 
 .calculation-form h2 {
     color: #00b1f5;
-    font-size: 1.6vw;
+    font-size: 1.5em;
     text-align: center;
-    margin: unset;
-    padding: 0 1.2vw 2vw;
+    margin: 0;
+    padding: 0 1em 2em;
     font-weight: bold;
 }
 
@@ -99,12 +195,11 @@ form ul {
 
 form label {
     color: #c3c5c5;
-    font-size: .9vw;
+    font-size: .8em;
 }
 
 form input {
     color: #262626;
-    font-size: 1.2vw;
     letter-spacing: 1px;
     width: 100%;
     border: none;
@@ -116,19 +211,21 @@ form input {
 form li {
     display: flex;
     justify-content: space-between;
-    padding-bottom: .9vw;
+    padding-bottom: 1em;
 }
-.calculation-form .last{
+
+.calculation-form .last {
     padding-bottom: 0;
 }
+
 form li div {
     width: 100%;
-    padding: 0 1vw;
+    padding: 0 1em;
 }
 
 .input-container p {
-    font-size: 1vw;
-    margin: .5vw 0;
+    font-size: .8em;
+    margin: .5em 0;
 }
 
 .input-annotation {
@@ -143,27 +240,25 @@ form li div {
 }
 
 .form-button {
-    padding: .8vw 0;
-    margin: 2vw .1vw;
+    padding: .6em 0;
+    margin: 2.3em .1em;
     border: none;
     background-color: #00b1f5;
     color: white;
-    border-radius: .5vw;
-    font-size: 1.5vw;
+    border-radius: .5em;
     font-weight: bolder;
 }
 
 .advantages {
     border-bottom: 1px solid #c3c5c5;
-    padding: 3.1vw 8.5vw;
 }
 
 .advantages p {
+    margin: 1em auto;
     position: relative;
-    padding-left: 6vw;
-    font-weight: bolder;
-    font-size: 1.5vw;
-    width: 25%;
+    padding-left: 2.7em;
+    font-weight: bold;
+    width: 16.5em;
 }
 
 .advantages p:before {
@@ -173,8 +268,8 @@ form li div {
     transform: translateY(-50%);
     left: 0;
     content: '';
-    height: 4vw;
-    width: 4vw;
+    height: 2.5em;
+    width: 2.5em;
     background-image: url("../img/check.svg");
     background-repeat: no-repeat;
 }
@@ -185,63 +280,64 @@ form li div {
 
 .advantages .third:before {
     background-image: url("../img/settings.svg");
-    left: .5vw;
 }
 
 .about-system {
     text-align: center;
-    padding: 4vw 6vw;
+    padding: 4em 6em;
 }
+
 .about-system h2 {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 2.9vw;
-    width: 30vw;
+    font-size: 2.8em;
+    width: 10em;
     margin: auto;
     font-weight: 600;
 }
+
 .card-price {
     display: flex;
-    justify-content: space-around;
-    margin: 6vw 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 6em 0 0;
 }
 
-.card-price p {
-    font-size: 1.3vw;
-    line-height: 2vw;
-}
 .card-price h3 {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 1.7vw;
+    font-size: 1.5em;
 }
+
 .card-price .card-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    height: 31vw;
-    max-width: 455px;
-    width: 25%;
+    height: 34em;
+    width: 25em;
     text-align: left;
     color: white;
     background-image: linear-gradient(to bottom, #00b1f5, #5ed2ff);;
-    padding: 6vw 2.2vw 2.2vw;
-    margin: 4vw 0;
-    border-radius: 20px;
+    padding: 6em 2em 2em;
+    margin: 4em auto;
+    border-radius: 2em;
 }
-.card-container .bottom-price{
+
+.card-container .bottom-price {
     margin: 0;
 }
+
 .card-price .card-container:before {
     position: absolute;
     display: block;
-    top: -6vw;
+    top: -5em;
     left: 50%;
     transform: translateX(-50%);
     content: '';
-    width: 15vw;
-    height: 15vw;
+    width: 12em;
+    height: 12em;
     background-image: url("../img/alarm&Button.png");
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -254,76 +350,67 @@ form li div {
 }
 
 .system-text {
-    font-size: 1.3vw;
-    width: 50vw;
-    margin: 5vw auto;
-    line-height: 4vw;
+    font-size: 1.2em;
+    width: 40em;
+    margin: 5em auto;
+    line-height: 4em;
     padding: 0;
 }
 
-.less {
-    width: 40vw;
-}
-
 .about-system-button {
-    padding: 1.2vw 3vw;
+    padding: .5em 1em;
     background-color: #08237e;
-    border-radius: 10px;
+    border-radius: .5em;
     border: none;
     color: white;
-    font-size: 1.5vw;
-    letter-spacing: .05vw;
-    word-spacing: .05vw;
-    font-weight: bold;
-    margin: 2vw 0;
+    letter-spacing: 1px;
+    margin: 2em 0;
 }
 
 .wrap_image, .wrap_image_button {
-    padding: 3.7vw 6vw;
+    padding: 3em 6em;
     color: white;
     text-align: left;
     background-image: url("../img/02.png");
     background-size: cover;
-    background-position: center 40vw;
+    background-position: center 40%;
 }
 
 .wrap_image p, .wrap_image_button p {
-    font-size: 1.5vw;
-    width: 67vw;
+    width: 50%;
 }
 
 .wrap_image h2 {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 2.6vw;
-    width: 60vw;
+    font-size: 2.8em;
+    width: 22em;
     font-weight: 600;
 }
 
 .option {
     text-align: center;
     border-bottom: 1px solid #c3c5c5;
-    padding: 5vw 0 6vw;
+    padding: 5em 0 6em;
 }
 
-.option button {
-    margin-bottom: 20px;
-}
-.less-more{
+
+.less-more {
     text-align: left;
-    width: 42vw;
+    width: 42em;
 }
+
 .five-with-icon {
     display: flex;
     font-weight: bold;
-    padding: 3vw 6vw;
+    padding: 3em 6em;
 }
 
 .five-with-icon p {
-    width: 24%;
+    width: 24em;
     text-align: center;
     position: relative;
-    padding-top: 8vw;
-    font-size: 1.5vw;
+    padding-top: 6em;
+    font-size: 1.5em;
 }
 
 .five-with-icon p:before {
@@ -333,31 +420,37 @@ form li div {
     transform: translateX(-50%);
     display: block;
     content: '';
-    width: 6vw;
-    height: 6vw;
+    width: 5em;
+    height: 5em;
     background-image: url("../img/finance.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.five-with-icon .second:before{
+
+.five-with-icon .second:before {
     background-image: url("../img/design.png");
 }
-.five-with-icon .third:before{
+
+.five-with-icon .third:before {
     background-image: url("../img/gear.png");
 }
-.five-with-icon .fourth:before{
+
+.five-with-icon .fourth:before {
     background-image: url("../img/maintenance.png");
 }
+
 .five-with-icon .fifth:before {
     background-image: url("../img/aftercare.png");
 }
-.system-text li{
+
+.system-text li {
     list-style: none;
     position: relative;
-    padding-left: 1.8vw;
+    padding-left: .8em;
 }
-.system-text li:before{
+
+.system-text li:before {
     display: block;
     position: absolute;
     left: 0;
@@ -367,103 +460,115 @@ form li div {
     background-image: url("../img/chevron-right.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: .5vw;
-    height: 1vw;
+    width: .6em;
+    height: .6em;
     color: #78daff;
     font-weight: bolder;
 }
-.wrap_image_button{
+
+.wrap_image_button {
     background-image: url("../img/03.png");
 }
+
 .wrap_image_button h2 {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.8em;
     font-weight: 600;
 }
-.wrap_image_button p{
-    width: 40vw;
-}
-.wrap_image_button span{
+
+.wrap_image_button span {
     color: #ff4756;
 }
-.wrap_image_button button{
+
+.wrap_image_button button {
     border: none;
-    padding: 1vw 2vw;
+    padding: .5em 1em;
     background-color: #00b1f5;
     color: white;
-    font-weight: bolder;
-    font-size: 1.5vw;
-    border-radius: 10px;
-    margin: 20px 0;
+    border-radius: .5em;
+    margin: 1em 0;
 }
-.text-before-logos p{
-    width: 43vw;
-    margin: 4.5vw auto;
+
+.text-before-logos p {
+    width: 43em;
+    margin: 4em auto;
 
 }
-.partner-logos{
+
+.partner-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5vw 6vw;
+    padding: 3em 6em;
     border-top: 1px solid #c3c5c5;
     border-bottom: 1px solid #c3c5c5;
 }
-.partner-logos img{
-    height: 7vw;
+
+.partner-logos img {
+    height: 7em;
 }
-.partner-logos .first{
-    height: 5vw;
+
+.partner-logos .first {
+    height: 5em;
 }
-.text-before-logos .last{
-    margin: 7vw auto;
+
+.text-before-logos .last {
+    margin: 7em auto;
 }
-.slider-container{
+
+.slider-container {
     background-image: url("../img/04.png");
     text-align: center;
 }
+
 .splide {
-    padding: 1vw 0;
+    padding: 1em 0;
 }
-.splide__slide{
+
+.splide__slide {
     opacity: 50%;
 }
-.splide__slide+.is-active{
+
+.splide__slide + .is-active {
     opacity: unset;
 }
+
 .slider-items {
     display: flex;
-    margin: 0 8.2vw;
+    margin: 0 6em;
 }
-.slider-items img{
-    margin: auto 2vw;
-    width: 6vw;
-    height: 6vw;
+
+.slider-items img {
+    margin: auto 2em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
 }
+
 .slider-card {
     position: relative;
     background-color: white;
-    border-radius: 10px;
-    padding: 1vw 2.5vw;
-    font-size: 1.3vw;
-    margin-left: 3vw;
+    border-radius: 1em;
+    padding: 1em 2em;
+    margin-left: 3em;
 }
-.slider-card p{
+
+.slider-card p {
     font-style: italic;
     margin: 0;
-    padding: 1.7vw 0;
+    padding: 1em 0;
     text-align: left;
 }
-.slider-card:before{
+
+.slider-card:before {
     position: absolute;
-    content:"";
+    content: "";
     border-style: solid;
-    border-width: 2vw 3vw 2vw 0;
+    border-width: 2em 3em 2em 0;
     border-color: transparent white transparent transparent;
     top: 50%;
     transform: translateY(-50%);
-    left: -2.9vw;
+    left: -2.9em;
 }
 
 .sendInput div {
@@ -472,9 +577,8 @@ form li div {
 }
 
 .sendInput label {
-    font-size: 1.2vw;
     color: black;
-    margin: .5vw 0;
+    margin: .2em 0;
     letter-spacing: 0;
     font-weight: bold;
     padding: 0;
@@ -484,16 +588,18 @@ form li div {
     border: none;
     outline: none;
     text-align: left;
-    width: 50%;
+    width: 8em;
 }
-.sendInput .month{
-    width: 32%;
+
+.sendInput .month {
+    width: 5em;
 }
+
 .slider-button {
-    font-size: 1.4vw;
+    font-size: 1.5em;
     letter-spacing: 1px;
-    padding: 1.4vw 2.5vw;
-    margin: 3.5vw 0 6vw;
+    padding: 1.4em 2.5em;
+    margin: 3.5em 0 6em;
     border: none;
     border-radius: 10px;
     color: #08237e;
@@ -503,27 +609,31 @@ form li div {
 
 footer {
     background-color: #08237e;
-    color: #fff;}
-.information-container{
+    color: #fff;
+}
+
+.information-container {
     display: flex;
     justify-content: space-around;
-    padding: 5vw 0 4vw;
+    padding: 5em 0 4em;
 }
+
 .location p {
     position: relative;
-    padding-left: 4.5vw;
-    font-size: 1.5vw;
+    padding-left: 4em;
+    font-size: 1.2em;
     margin: 0;
 }
-.location p:before{
+
+.location p:before {
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     content: '';
-    height: 4vw;
-    width: 3.8vw;
+    height: 4em;
+    width: 4em;
     background-image: url("../img/Map marker.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -531,8 +641,8 @@ footer {
 
 .number {
     position: relative;
-    padding-left: 1.5vw;
-    font-size: 1vw;
+    padding-left: 2em;
+    font-size: 1.2em;
     color: white;
     text-decoration: none;
     vertical-align: top;
@@ -541,19 +651,21 @@ footer {
 .number:before {
     position: absolute;
     content: '';
-    width: 1vw;
-    height: 1vw;
-    top:50%;
+    width: 1em;
+    height: 1em;
+    top: 50%;
     transform: translateY(-50%);
-    left:0;
+    left: 0;
     background-image: url("../img/phone-img.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
-.socialNetwork{
+
+.socialNetwork {
     display: flex;
     flex-direction: column;
 }
+
 .socialIcon {
     display: flex;
     justify-content: space-between;
@@ -566,9 +678,9 @@ footer {
     background-image: url("../img/facebook.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 1.5vw;
-    height: 1.5vw;
-    margin-top: 1.5vw;
+    width: 1em;
+    height: 1em;
+    margin-top: 1em;
 }
 
 .socialIcon .second {
@@ -580,9 +692,8 @@ footer {
 }
 
 .copyright {
-    width: 25vw;
-    letter-spacing: .1vw;
-    font-size: 1.5vw;
+    width: 18em;
+    font-size: 1.2em;
 }
 
 .copyright p {
@@ -592,8 +703,8 @@ footer {
 .quotes {
     border-top: 1px solid #c3c5c5;
     margin: 0;
-    padding: 1vw 9vw;
-    font-size: .8vw;
+    padding: 1em 9em;
+    font-size: .8em;
 }
 
 
@@ -601,27 +712,29 @@ footer {
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    margin: 1vw 0;
+    margin: 1em 0;
+    border-bottom: none;
+
 }
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    height: 1.7vw;
-    width: 1.7vw;
+    height: 1.2em;
+    width: 1.2em;
     background-color: white;
     border: 1px solid #c3c5c5;
     border-radius: 50%;
-    margin-top: -.7vw;
+    margin-top: -.5em;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     appearance: none;
-    height: .3vw;
-    width: .3vw;
+    height: .3em;
+    width: .3em;
     background-color: #22bffc;
-    border-radius: 30px;
+    border-radius: 3em;
 }
 
 .button-shadow {
@@ -637,168 +750,142 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .system-text-padding {
-    padding: 3vw 0;
+    padding: 3em 0;
 }
 
 .system-text-padding .system-text {
-    margin: 2vw auto;
+    margin: 2em auto;
 }
-.splide__pagination .splide__pagination__page{
-    width: 1vw;
-    height: 1vw;
+
+.splide__pagination .splide__pagination__page {
+    width: .6em;
+    height: .6em;
 }
-.splide__track{
-    margin: 3vw 0;
+
+.splide__track {
+    margin: 3em 0;
 }
-@media (max-width: 768px) {
-    .calculation, .card-price {
-        flex-direction: column;
+
+@media (max-width: 1750px) {
+    .calculation {
+        justify-content: space-between;
+
     }
 
-    .calculation-form, .calculation .about-calculation {
-        width: fit-content;
-    }
-
-    .calculation-form h2 {
-        padding: 0 15% 2vw;
-    }
-
-    .calculation-form {
-        font-size: 0;
-        border-radius: 5px;
-    }
-
-    .input-container label, .input-annotation p, .quotes {
-        font-size: 1.5vw;
-    }
-
-    .system-text,
-    .wrap_image p,
-    .wrap_image_button p,
-    .card-container p,
-    .input-container input,
-    .sendInput label,
-    .sendInput input,
-    .about-calculation p,
-    .five-with-icon p,
-    .advantages p {
-        font-size: 2.5vw;
-        line-height: 5vw;
-    }
-
-    .advantages p {
-        width: 30%;
-        padding-left: 8vw;
-    }
-
-    .advantages p:before {
-        width: 6vw;
-        height: 6vw;
-    }
-
-    .five-with-icon p {
-        padding-top: 10vw;
-    }
-
-    .partner-logos img {
-        height: 9vw;
-    }
-
-    .partner-logos .first {
-        height: 7vw;
-    }
-
-
-    .five-with-icon p:before {
-        width: 8vw;
-        height: 8vw;
-    }
-
-    .about-system h2, .wrap_image h2, .wrap_image_button h2 {
-        width: 100%;
-        font-size: 5vw;
-    }
-
-    .wrap_image_button {
-        background-position: center;
-    }
-
-    .button-shadow, .slider-card, .wrap_image_button button, .information-container p, .number, .header-contacts a {
-        font-size: 2vw;
-    }
-
-    .header-contacts a {
-        padding-left: 7vw;
-    }
-
-    .header-contacts a:before {
-        height: 2.5vw;
-        width: 2.5vw;
-    }
-
-    .system-text li {
-        padding-left: 12px;
-    }
-
-    .system-text, .wrap_image p, .wrap_image h2, .wrap_image_button h2, .wrap_image_button p {
-        width: 100%;
-    }
-
-
-    .system-text-padding .system-text, .system-text-padding li {
-        width: fit-content;
-        margin: 2vw 6vw;
-    }
-
-    .system-text-padding .less {
-        margin: 2vw 0;
-    }
-
-    .system-text li:before {
-        width: 10px;
-        height: 10px;
-    }
-
-    .card-container h3 {
-        font-size: 20px;
-    }
-
-    .five-with-icon, .advantages {
-        padding: 1.5vw 2vw;
+    .card-price {
+        justify-content: space-between;
     }
 
     .card-price .card-container {
-        width: 80%;
-        margin: 12% auto 0;
-        padding: 10% 4% 4%;
-        height: 45%;
+        width: 20em;
+        height: 40em;
+        padding: 5em 1.8em 1.8em;
     }
 
-    .card-price .card-container:before {
-        top: -10%;
-        width: 32%;
-        height: 32%;
+    .advantages p {
+        width: 27%;
     }
 
-    .splide__track {
-        margin: 6vw 0;
+    .wrap_image p, .wrap_image_button p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .card-price {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .information-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information-container div {
+        margin: 2.5em auto;
+        width: fit-content;
+    }
+    .information-container .copyright{
+        width: 50%;
+    }
+    .calculation article, .calculation-form {
+        width: fit-content;
+        margin: 1em auto;
+    }
+
+    .about-calculation h2,
+    .about-system h2,
+    .wrap_image h2,
+    .wrap_image_button h2 {
+        width: 100%;
+        font-size: 3.5em;
+    }
+
+    .card-container h3,
+    .calculation-form h2 {
+        font-size: 2.5em;
+    }
+
+    form label,
+    .input-annotation p {
+        margin: 0;
+        font-size: 1.6em;
+    }
+
+    .system-text,
+    .system-text-padding .system-text,
+    .card-container p,
+    .about-calculation p,
+    .sendInput label,
+    .input-container input,
+    .wrap_image p,
+    .wrap_image_button p,
+    .slider-card p,
+    .button-shadow,
+    .advantages p,
+    .location p,
+    .socialNetwork a,
+    .copyright p {
+        width: 100%;
+        font-size: 2.25em;
+        line-height: 2.5em;
+    }
+
+    .button-shadow {
+        width: fit-content;
     }
 
     .slider-items {
         margin: 0;
     }
 
-    .form-button {
-        margin: 5vw 0;
+    .need-padding, .option {
+        box-sizing: border-box;
+        padding: 3em 6em;
     }
 
-    @media (max-width: 500px) {
-        .system-text, .wrap_image p, .wrap_image_button p, .card-container p, .input-container input, .sendInput label, .sendInput input, .about-calculation p {
-            font-size: 3vw;
-        }
-
-        .input-container label, .input-annotation p {
-            font-size: 2vw;
-        }
+    .sendInput label {
+        width: fit-content;
     }
+
+    .sendInput input {
+        width: 8.6em;
+    }
+
+    .sendInput .month {
+        width: 5.5em;
+    }
+
+    .card-price .card-container {
+        width: 80%;
+        height: fit-content;
+        padding: 5em 2em 2em;
+    }
+
+    .advantages p {
+        width: 25em;
+    }
+
 }
+
