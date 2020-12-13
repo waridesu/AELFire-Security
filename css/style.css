@@ -105,8 +105,7 @@ header img {
     display: block;
     content: '';
     position: absolute;
-    top: -50%;
-    transform: translateY(50%);
+    top: -.1em;
     left: .5em;
     height: 1.46em;
     width: 1.46em;
@@ -228,6 +227,7 @@ form li div {
 }
 
 .form-button {
+    display: block;
     padding: .6em 0;
     margin: 2.3em .1em;
     border: none;
@@ -386,11 +386,13 @@ form li div {
     text-align: left;
     width: 42em;
 }
+.icon-text {
+    padding: 3em 6em;
 
+}
 .five-with-icon {
     display: flex;
     font-weight: bold;
-    padding: 3em 6em;
 }
 
 .five-with-icon p {
@@ -469,6 +471,7 @@ form li div {
 }
 
 .wrap_image_button button {
+    display: block;
     border: none;
     padding: .5em 1em;
     background-color: #00b1f5;
@@ -485,6 +488,7 @@ form li div {
 
 .partner-logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 3em 6em;
@@ -493,11 +497,7 @@ form li div {
 }
 
 .partner-logos img {
-    height: 7em;
-}
-
-.partner-logos .first {
-    height: 5em;
+    height: 9em;
 }
 
 .text-before-logos .last {
@@ -780,6 +780,15 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 720px) {
+    .about-calculation h2,
+    .about-calculation p,
+    .wrap_image h2,
+    .wrap_image p,
+    .wrap_image_button h2,
+    .wrap_image_button p {
+        text-align: center;
+    }
+
     .card-price {
         justify-content: space-between;
         flex-wrap: wrap;
@@ -791,12 +800,22 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .information-container div {
-        margin: 2.5em auto 2.5em 6em;
         width: fit-content;
     }
-    .information-container .copyright{
+
+    .socialNetwork, .copyright, .location {
+        margin: 0 auto 0 3em;
+    }
+
+    .socialNetwork, .copyright, .header-contacts {
+        margin-top: 3em;
+
+    }
+
+    .information-container .copyright {
         width: 50%;
     }
+
     .calculation article, .calculation-form {
         width: fit-content;
         margin: 1em auto;
@@ -817,9 +836,10 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     form label,
-    .input-annotation p {
+    .input-annotation p,
+    .header-contacts a {
         margin: 0;
-        font-size: 1.6em;
+        font-size: 1.69em;
     }
 
     .system-text,
@@ -837,19 +857,20 @@ input[type=range]::-webkit-slider-runnable-track {
     .socialNetwork a,
     .copyright p,
     .wrap_image_button button,
-    .five-with-icon p
-    {
+    .five-with-icon p,
+    .quotes {
         width: 100%;
         font-size: 2.25em;
         line-height: 2.5em;
     }
 
-    .button-shadow {
+    .quotes {
         width: fit-content;
+        padding: 0 2em;
     }
 
     .slider-items {
-        margin: 0 1em;
+        margin: 0 3em;
     }
 
     .need-padding, .option {
@@ -878,19 +899,36 @@ input[type=range]::-webkit-slider-runnable-track {
     .advantages p {
         width: 25em;
     }
-    .system-text li:before{
-        top:1.2em;
+
+    .system-text li:before {
+        top: 1.2em;
+    }
+
+    .socialIcon a,
+    .number:before {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .wrap_image_button .button-shadow,
+    .button-shadow{
+        width: fit-content;
+        margin: 1em auto;
     }
 
 }
+
 @media (max-width: 425px) {
-    .card-price{
+
+    .card-price {
         width: 100%;
     }
-    .five-with-icon{
+
+    .five-with-icon {
         flex-wrap: wrap;
     }
-    .five-with-icon p{
+
+    .five-with-icon p {
         margin: 1em auto;
         width: 50%;
         font-weight: bolder;
@@ -899,7 +937,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
     }
     form li {
-        width: 210px;
+        width: 95%;
         flex-direction: column;
     }
     .sendInput input{
@@ -912,15 +950,34 @@ input[type=range]::-webkit-slider-runnable-track {
         margin: 0;
     }
 
-    .slider-card:before{
+    .slider-card:before {
         display: none;
     }
+
     .slider-button {
         margin: 3.5em .5em;
     }
-    .slider-items img{
+
+    .slider-items img {
         margin: 2em auto;
     }
 
+    .partner-logos img {
+        margin: auto;
+        height: 19em;
+        width: 22em;
+    }
+
+    .card-price .card-container {
+        width: 100%;
+    }
+    form .last{
+        flex-direction: column-reverse;
+    }
+    .input-container .form-button{
+        width: fit-content;
+        padding: .5em 1.5em;
+        margin: 1em auto 1em 1em;
+    }
 }
 
