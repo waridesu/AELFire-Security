@@ -780,6 +780,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 720px) {
+    header img{
+        width: 20.8em;
+    }
     .about-calculation h2,
     .about-calculation p,
     .wrap_image h2,
@@ -807,7 +810,7 @@ input[type=range]::-webkit-slider-runnable-track {
         margin: 0 auto 0 3em;
     }
 
-    .socialNetwork, .copyright, .header-contacts {
+    .socialNetwork, .copyright {
         margin-top: 3em;
 
     }
@@ -981,3 +984,9 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 }
 
+@media (max-width: 406px) {
+    .header-contacts {
+        margin-top: 3em;
+    }
+
+}
