@@ -311,19 +311,19 @@ addEventListener('change',e=()=>{
         formTax.value = '\u00A324,096.75'
         formMonthly.value = '\u00A32113.75'
     } else if (amount.value === '100' && duration.value === '2') {
-        formAmount.value = '\u00A395,000.00'
+        formAmount.value = '\u00A3100,000.00'
         formTax.value = '\u00A322,330.32'
         formMonthly.value = '\u00A34897.00'
     } else if (amount.value === '100' && duration.value === '3') {
-        formAmount.value = '\u00A395,000.00'
+        formAmount.value = '\u00A3100,000.00'
         formTax.value = ' \u00A323,324.40'
         formMonthly.value = '\u00A33410.00'
     } else if (amount.value === '100' && duration.value === '4') {
-        formAmount.value = '\u00A395,000.00'
+        formAmount.value = '\u00A3100,000.00'
         formTax.value = '\u00A324,332.16'
         formMonthly.value = '\u00A32668.00'
     } else if (amount.value === '100' && duration.value === '5') {
-        formAmount.value = '\u00A395,000.00'
+        formAmount.value = '\u00A3100,000.00'
         formTax.value = '\u00A325,365.00'
         formMonthly.value = '\u00A32225.00'
     }
