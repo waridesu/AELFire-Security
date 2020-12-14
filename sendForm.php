@@ -28,15 +28,15 @@
 
     if ($mail_sent == true){ ?>
         <script language="javascript" type="text/javascript">
-        alert('The mail has been sent');
+            document.querySelector('.send-success').style.display="block"
   // window.location = 'index.html#formulaire';
   // class to form hide
          </script>
     <?php } else { ?>
-    <script language="javascript" type="text/javascript">
-        alert('Message not sent. Please, notify site administrator myadmin@mydomain.com');
+        <script language="javascript" type="text/javascript">
+            document.querySelector('.send-fail').style.display="block"
   // window.location = 'index.html#formulaire';
-    </script>
+         </script>
     <?php
     }
 ?>

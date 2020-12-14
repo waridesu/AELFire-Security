@@ -218,7 +218,12 @@ form button,
     padding: 0 1em 2em;
     font-weight: bold;
 }
-
+.calculation-form .send-success,
+.calculation-form .send-fail{
+    display: none;
+    padding: 0;
+    margin: .5em 1em;
+}
 form ul {
     padding: 0;
     margin: 0;

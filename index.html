@@ -43,21 +43,25 @@
                 <li>
                     <div class="input-container">
                         <label for="name">Name</label>
-                        <input name="name" id="name" required>
+                        <input name="name" id="name" required oninvalid="this.setCustomValidity('Please fill in the required fields')"
+                               oninput="this.setCustomValidity('')">
                     </div>
                     <div class="input-container">
                         <label for="company">Company</label>
-                        <input name="company" id="company" required>
+                        <input name="company" id="company" required oninvalid="this.setCustomValidity('Please fill in the required fields')"
+                               oninput="this.setCustomValidity('')">
                     </div>
                 </li>
                 <li>
                     <div class="input-container">
                         <label for="phone">Phone</label>
-                        <input name="phone" id="phone" required>
+                        <input name="phone" id="phone" required oninvalid="this.setCustomValidity('Please fill in the required fields')"
+                               oninput="this.setCustomValidity('')">
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input name="email" id="email" required type="email">
+                        <input name="email" id="email" required type="email" oninvalid="this.setCustomValidity('Please fill in the required fields')"
+                               oninput="this.setCustomValidity('')">
                     </div>
                 </li>
                 <li>
@@ -98,7 +102,10 @@
                     </div>
                 </li>
             </ul>
+            <h2 class="send-success">Thank you for getting in touch, we will contact you as soon as possible</h2>
+            <h2 class="send-fail">Sorry, there was a problem. Try again later!</h2>
         </form>
+
     </section>
     <div class="advantages">
         <p>High Acceptance Rate</p>
