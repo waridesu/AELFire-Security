@@ -227,7 +227,7 @@ form ul {
 
 form label {
     color: #c3c5c5;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 form input {
@@ -256,7 +256,7 @@ form li div {
 }
 
 .input-container p {
-    font-size: .8em;
+    font-size: 1em;
     margin: .5em 0;
 }
 
@@ -549,6 +549,7 @@ form li div {
 
 .slider-container {
     background-image: url("../img/04.png");
+    background-size: cover;
     text-align: center;
 }
 
@@ -610,25 +611,27 @@ form li div {
 .sendInput div {
     display: flex;
     padding: 0;
+    margin: .5em 0;
 }
 
 .sendInput label {
     color: black;
-    margin: .2em 0;
     letter-spacing: 0;
     font-weight: bold;
     padding: 0;
+    line-height: normal;
 }
 
 .sendInput input {
     border: none;
     outline: none;
     text-align: left;
+    line-height: normal;
     width: 8em;
 }
 
 .sendInput .month {
-    width: 5.4em;
+    width: 5em;
 }
 
 .slider-button {
@@ -902,7 +905,7 @@ input[type=range]::-webkit-slider-runnable-track {
     .input-annotation p,
     .header-contacts a {
         margin: 0;
-        font-size: 1.9em;
+        font-size: 1.69em;
     }
 
     .system-text,
@@ -981,7 +984,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 425px) {
-
+    .slider-container{
+        background-size: cover;
+        background-position: center;
+    }
     .card-price {
         width: 100%;
     }
@@ -1044,6 +1050,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 513px) {
+    .header-contacts .header-phone{
+        margin-right: auto;
+    }
     header {
         flex-direction: column;
         align-items: start
