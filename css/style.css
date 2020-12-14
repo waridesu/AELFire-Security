@@ -836,6 +836,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 720px) {
+    .card-price .card-container {
+        align-items: center;
+    }
     .wrap_image_button {
         background-position: center;
     }
