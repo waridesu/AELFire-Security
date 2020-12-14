@@ -5,8 +5,6 @@ let formTax = document.getElementById('formTax')
 let formMonthly = document.getElementById('formMonthly')
 
 addEventListener('change',e=()=>{
-    document.querySelector('.send-success').style.display="block"
-
     if(amount.value==='5' && duration.value==='2'){
         formAmount.value = '\u00A35,000.00'
         formTax.value = '\u00A31,129.51'
@@ -329,6 +327,4 @@ addEventListener('change',e=()=>{
         formTax.value = '\u00A325,365.00'
         formMonthly.value = '\u00A32225.00'
     }
-    alert('The form has been sent');
-
 })
