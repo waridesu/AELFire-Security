@@ -579,8 +579,8 @@ form li div {
 
 .slider-items img {
     margin: auto 2em;
-    width: 8em;
-    height: 8em;
+    width: 10%;
+    height: 10%;
     border-radius: 50%;
 }
 
@@ -826,6 +826,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 1750px) {
+    .slider-items img {
+        width: 15%;
+        height: 15%;
+    }
     .card-price {
         justify-content: space-between;
     }
@@ -1037,6 +1041,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
     .slider-items img {
         margin: 2em auto;
+
     }
 
     .partner-logos img {
