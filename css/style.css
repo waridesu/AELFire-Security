@@ -529,13 +529,17 @@ form li div {
     color: white;
     margin: 1em 0;
 }
-
+.text-before-logos{
+    padding-top: 5em;
+}
 .text-before-logos p {
     width: 43em;
     margin: 4em auto;
 
 }
-
+.about-system .system-text-padding{
+    padding: 3em 0 1em;
+}
 .partner-logos {
     display: flex;
     flex-wrap: wrap;
@@ -578,6 +582,9 @@ form li div {
 }
 
 .slider-items img {
+    -webkit-box-shadow: 0 8px 32px 0;
+    -moz-box-shadow: 0 8px 32px 0 rgba(36, 144, 228, 0.61);
+    box-shadow: 0 8px 32px 0 rgba(36, 144, 228, 0.61);
     margin: auto 2em;
     width: 10%;
     height: 10%;
