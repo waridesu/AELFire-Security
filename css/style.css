@@ -631,9 +631,10 @@ form li div {
 
 .sendInput label {
     color: black;
-    font-weight: 600;
+    font-weight: bold;
     padding: 0;
     line-height: normal;
+    font-size: 1.4em;
 }
 
 .sendInput input {
@@ -644,6 +645,7 @@ form li div {
     text-align: left;
     line-height: normal;
     width: 8em;
+    font-size: 1.4em;
 }
 
 .sendInput .month {
