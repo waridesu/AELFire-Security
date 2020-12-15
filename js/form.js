@@ -141,7 +141,7 @@ addEventListener('change',e=()=>{
     }else if(amount.value==='45' && duration.value==='3'){
         formAmount.value = ' \u00A345,000.00'
         formTax.value = ' \u00A310,557.54'
-        formMonthly.value ='\u00A31543.50'
+        formMonthly.value =' \u00A31543.50'
     }else if(amount.value==='45' && duration.value==='4'){
         formAmount.value = ' \u00A345,000.00'
         formTax.value = ' \u00A311,047.97'
