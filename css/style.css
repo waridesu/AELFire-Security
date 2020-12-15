@@ -59,7 +59,7 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1105px) {
     body {
         font-size: 11px;
     }
@@ -634,7 +634,7 @@ form li div {
     font-weight: bold;
     padding: 0;
     line-height: normal;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .sendInput input {
@@ -645,7 +645,7 @@ form li div {
     text-align: left;
     line-height: normal;
     width: 8em;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .sendInput .month {
@@ -967,10 +967,12 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .sendInput label {
+        font-size: 2.05em;
         width: fit-content;
     }
 
     .sendInput input {
+        font-size: 2.05em;
         width: 8.6em;
     }
 
