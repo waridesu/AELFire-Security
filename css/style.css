@@ -529,8 +529,8 @@ form li div {
     color: white;
     margin: 1em 0;
 }
-.text-before-logos{
-    padding-top: 5em;
+.text-before-logos .need-padding{
+    padding: 8em 0;
 }
 .text-before-logos p {
     width: 43em;
