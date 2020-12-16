@@ -10,7 +10,7 @@
     }
 }
 
-@media (max-width: 2200px) {
+@media (max-width: 2270px) {
     body {
         font-size: 19px;
     }
@@ -28,62 +28,62 @@
     }
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1830px) {
     body {
         font-size: 16px;
     }
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1550px) {
     body {
         font-size: 15px;
     }
 
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1450px) {
     body {
         font-size: 14px;
     }
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1350px) {
     body {
         font-size: 13px;
     }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1260px) {
     body {
         font-size: 12px;
     }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1155px) {
     body {
         font-size: 11px;
     }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1060px) {
     body {
         font-size: 10px;
     }
 }
 
-@media (max-width: 935px) {
+@media (max-width: 960px) {
     body {
         font-size: 9px;
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
     body {
         font-size: 8px;
     }
 }
 
-@media (max-width: 755px) {
+@media (max-width: 780px) {
     body {
         font-size: 7px;
     }
@@ -92,12 +92,6 @@
 @media (max-width: 620px) {
     body {
         font-size: 6px;
-    }
-}
-
-@media (max-width: 510px) {
-    body {
-        font-size: 5px;
     }
 }
 
@@ -137,7 +131,7 @@ header img {
 }
 
 .header-contacts a {
-    font-size: 1.14em;
+    font-size: 1.4em;
     text-decoration: none;
     color: #08237e;
     position: relative;
@@ -183,7 +177,7 @@ header img {
 
 .about-calculation h2 {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: 600;
 }
 
@@ -196,23 +190,21 @@ form input,
 .sendInput label,
 .sendInput input,
 .system-text {
-    font-size: 1.4em;
-    line-height: 1.5em;
+    font-size: 1.6em;
 }
 
 .advantages p,
 form button,
 .about-system-button,
 .wrap_image_button button {
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
 
 .calculation-form h2 {
     color: #00b1f5;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin: 0;
     padding: 0 1em 2em;
@@ -261,7 +253,7 @@ form li div {
 }
 
 .input-container p {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: .5em 0;
 }
 
@@ -279,7 +271,7 @@ form li div {
 .form-button {
     display: block;
     padding: .5em 0;
-    margin: 1em .1em;
+    margin: .5em .1em;
     border: none;
     background-color: #00b1f5;
     color: white;
@@ -293,10 +285,9 @@ form li div {
 .advantages p {
     margin: 1em auto;
     position: relative;
-    padding-left: 3.2em;
+    padding-left: 3em;
     font-weight: bold;
-    width: 16em;
-    line-height: normal;
+    width: 15em;
 }
 
 .advantages p:before {
@@ -322,7 +313,7 @@ form li div {
 
 .about-system {
     text-align: center;
-    padding: 6em 6em;
+    padding: 6em 8em;
 }
 .about-system .text-before-card{
     margin: 1.5em auto 4em;
@@ -438,7 +429,7 @@ form li div {
     width: 42em;
 }
 .icon-text {
-    padding: 3em 6em;
+    padding: 3em 8em;
 
 }
 .five-with-icon {
@@ -708,8 +699,8 @@ footer {
 .number:before {
     position: absolute;
     content: '';
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -735,8 +726,8 @@ footer {
     background-image: url("../img/facebook.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     margin-top: 1em;
 }
 
@@ -761,7 +752,7 @@ footer {
     border-top: 1px solid #c3c5c5;
     margin: 0;
     padding: 1em 10em;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 
@@ -857,9 +848,12 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 }
 
-@media (max-width: 720px) {
-    .card-price .card-container {
-        align-items: center;
+@media (max-width: 768px) {
+.number {
+    padding-left: 2.5em;
+}
+    .socialIcon a{
+        margin-top: 2em;
     }
     .wrap_image_button {
         background-position: center;
@@ -906,7 +900,7 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .calculation article, .calculation-form {
-        width: fit-content;
+        width: 100%;
         margin: 1em auto;
         border-radius: 1em;
     }
@@ -925,19 +919,11 @@ input[type=range]::-webkit-slider-runnable-track {
         font-size: 2.5em;
     }
 
-    form label,
-    .input-annotation p,
-    .header-contacts a {
-        margin: 0;
-        font-size: 1.69em;
-    }
-
     .system-text,
     .system-text-padding .system-text,
     .card-container p,
     .about-calculation p,
     .sendInput label,
-    .input-container input,
     .wrap_image p,
     .wrap_image_button p,
     .slider-card p,
@@ -948,9 +934,16 @@ input[type=range]::-webkit-slider-runnable-track {
     .copyright p,
     .wrap_image_button button,
     .five-with-icon p,
-    .quotes {
-        width: 100%;
+    .quotes,form label,
+    .input-annotation p,
+    .header-contacts a {
         font-size: 2.25em;
+    }
+    .system-text, .system-text-padding .system-text {
+        width: 100%;
+    }
+    .input-container input{
+        font-size: 5em;
     }
 
     .quotes {
@@ -964,16 +957,16 @@ input[type=range]::-webkit-slider-runnable-track {
 
     .need-padding, .option {
         box-sizing: border-box;
-        padding: 3em 6em;
+        padding: 3em 8em;
     }
 
     .sendInput label {
-        font-size: 2.05em;
+        font-size: 2.2em;
         width: fit-content;
     }
 
     .sendInput input {
-        font-size: 2.05em;
+        font-size: 2.4em;
         width: 8.6em;
     }
 
@@ -990,25 +983,22 @@ input[type=range]::-webkit-slider-runnable-track {
         width: 25em;
     }
 
-    .system-text li:before {
-        top: 1.2em;
+    .socialIcon a,
+    .number:before{
+        width: 2em;
+        height: 2em;
     }
 
-    .socialIcon a,
-    .number:before {
-        width: 1.5em;
-        height: 1.5em;
+    .system-text li:before {
+        top: .55em;
     }
 
     .wrap_image_button .button-shadow,
     .button-shadow{
         width: fit-content;
         margin: 1em auto;
+        min-height: 60px;
     }
-
-}
-
-@media (max-width: 425px) {
     .slider-container{
         background-size: cover;
         background-position: center;
@@ -1069,28 +1059,26 @@ input[type=range]::-webkit-slider-runnable-track {
         flex-direction: column-reverse;
     }
     .input-container .form-button{
-        width: fit-content;
+        width: 80%;
         padding: .5em 1.5em;
         margin: 1em auto 1em 1em;
+        font-size: 2.25em;
     }
-}
-
-@media (max-width: 520px) {
     .header-contacts {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-    .header-contacts .header-phone{
-        margin-right: 0;
+    .header-contacts a{
+        margin-top: 2em;
     }
+
 
     header {
         flex-direction: column;
         align-items: start
     }
-
-    .header-contacts {
-        margin-top: 3em;
+    .text-before-logos .need-padding{
+        padding: 8em;
     }
-
 }
