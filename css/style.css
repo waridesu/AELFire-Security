@@ -979,12 +979,12 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .sendInput label {
-        font-size: 2.1em;
+        font-size: 2.28em;
         width: fit-content;
     }
 
     .sendInput input {
-        font-size: 2.4em;
+        font-size: 2.28em;
         width: 8.6em;
     }
 
