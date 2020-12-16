@@ -861,6 +861,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 768px) {
+    .card-price .card-container {
+        margin: 8em auto;
+    }
+
     .number {
         padding-left: 2.5em;
     }
@@ -874,7 +878,8 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     header img {
-        width: 20.8em;
+        width: 316px;
+        max-width: 100%;
     }
 
     .about-calculation h2,
@@ -919,17 +924,19 @@ input[type=range]::-webkit-slider-runnable-track {
         border-radius: 1em;
     }
 
-    .about-calculation h2,
+
     .about-system h2,
     .wrap_image h2,
-    .wrap_image_button h2 {
+    .wrap_image_button h2,
+    .calculation-form h2,
+    .card-container h3 {
+        box-sizing: border-box;
         width: 100%;
-        font-size: 3.5em;
+        font-size: 20px;
     }
 
-    .card-container h3,
-    .calculation-form h2 {
-        font-size: 3em;
+    .about-calculation h2 {
+        font-size: 32px;
     }
 
     .system-text,
@@ -941,18 +948,38 @@ input[type=range]::-webkit-slider-runnable-track {
     .slider-card p,
     .button-shadow,
     .advantages p,
-    .location p,
-    .socialNetwork a,
-    .copyright p,
     .wrap_image_button button,
     .five-with-icon p,
-    form label,
     .input-annotation p {
-        font-size: 2.5em;
+        font-size: 18px;
     }
 
-    .header-contacts a, .quotes {
-        font-size: 2em;
+    form ul {
+        padding: 0 1em;
+    }
+
+    form li {
+        padding: 0;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    form li div {
+        padding: 0;
+    }
+
+    form label {
+        font-size: 15px;
+    }
+
+    .location p,
+    .socialNetwork a,
+    .copyright p {
+        font-size: 14px;
+    }
+
+    .header-contacts a {
+        font-size: 16px;
 
     }
 
@@ -960,8 +987,12 @@ input[type=range]::-webkit-slider-runnable-track {
         width: 100%;
     }
 
+    .input-container {
+        padding-top: 10px;
+    }
+
     .input-container input {
-        font-size: 3.8em;
+        font-size: 18px;
     }
 
     .quotes {
@@ -979,12 +1010,12 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .sendInput label {
-        font-size: 2.28em;
+        font-size: 18px;
         width: fit-content;
     }
 
     .sendInput input {
-        font-size: 2.28em;
+        font-size: 18px;
         width: 8.6em;
     }
 
@@ -1013,7 +1044,6 @@ input[type=range]::-webkit-slider-runnable-track {
 
     .wrap_image_button .button-shadow,
     .button-shadow {
-        width: fit-content;
         margin: 1em auto;
         min-height: 3.8em;
     }
@@ -1042,8 +1072,7 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     form li {
-        width: 95%;
-        flex-direction: column;
+
     }
 
     .sendInput input {
@@ -1072,9 +1101,9 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .partner-logos img {
-        margin: auto;
-        height: 19em;
-        width: 22em;
+        margin: 20px auto;
+        height: auto;
+        width: 100px;
     }
 
     .card-price .card-container {
@@ -1085,11 +1114,13 @@ input[type=range]::-webkit-slider-runnable-track {
         flex-direction: column-reverse;
     }
 
+
     .input-container .form-button {
-        width: 80%;
+        max-width: 100%;
+        flex-grow: 1;
         padding: .5em 1.5em;
-        margin: 1em auto 1em 1em;
         font-size: 2.25em;
+        margin: 1em 0;
     }
 
     .header-contacts {
@@ -1110,5 +1141,33 @@ input[type=range]::-webkit-slider-runnable-track {
 
     .text-before-logos .need-padding {
         padding: 8em;
+    }
+
+    .card-price .card-container:before {
+        top: -10em;
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header,
+    .advantages,
+    .calculation,
+    .about-system,
+    .wrap_image,
+    .option,
+    .icon-text,
+    .wrap_image_button,
+    .text-before-logos .need-padding,
+    .partner-logos,
+    .information-container {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    .button-shadow {
+        max-width: 325px;
     }
 }
