@@ -28,62 +28,62 @@
     }
 }
 
-@media (max-width: 1830px) {
+@media (max-width: 1890px) {
     body {
         font-size: 16px;
     }
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1590px) {
     body {
         font-size: 15px;
     }
 
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1490px) {
     body {
         font-size: 14px;
     }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1390px) {
     body {
         font-size: 13px;
     }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1290px) {
     body {
         font-size: 12px;
     }
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 1190px) {
     body {
         font-size: 11px;
     }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1090px) {
     body {
         font-size: 10px;
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 990px) {
     body {
         font-size: 9px;
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 890px) {
     body {
         font-size: 8px;
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 790px) {
     body {
         font-size: 7px;
     }
@@ -210,12 +210,14 @@ form button,
     padding: 0 1em 2em;
     font-weight: bold;
 }
+
 .calculation-form .send-success,
-.calculation-form .send-fail{
+.calculation-form .send-fail {
     display: none;
     padding: 0;
     margin: .5em 1em;
 }
+
 form ul {
     padding: 0;
     margin: 0;
@@ -315,9 +317,11 @@ form li div {
     text-align: center;
     padding: 6em 8em;
 }
-.about-system .text-before-card{
+
+.about-system .text-before-card {
     margin: 1.5em auto 4em;
 }
+
 .about-system h2 {
     font-family: "Roboto Slab", sans-serif;
     font-size: 2.8em;
@@ -420,7 +424,8 @@ form li div {
     border-bottom: 1px solid #c3c5c5;
     padding: 5em 0 6em;
 }
-.option .system-text-padding{
+
+.option .system-text-padding {
     padding: 3em 0 1em;
 }
 
@@ -428,10 +433,12 @@ form li div {
     text-align: left;
     width: 42em;
 }
+
 .icon-text {
     padding: 3em 8em;
 
 }
+
 .five-with-icon {
     display: flex;
     font-weight: bold;
@@ -520,17 +527,21 @@ form li div {
     color: white;
     margin: 1em 0;
 }
-.text-before-logos .need-padding{
+
+.text-before-logos .need-padding {
     padding: 8em 0;
 }
+
 .text-before-logos p {
     width: 43em;
     margin: 4em auto;
 
 }
-.about-system .system-text-padding{
+
+.about-system .system-text-padding {
     padding: 3em 0 1em;
 }
+
 .partner-logos {
     display: flex;
     flex-wrap: wrap;
@@ -831,6 +842,7 @@ input[type=range]::-webkit-slider-runnable-track {
         width: 15%;
         height: 15%;
     }
+
     .card-price {
         justify-content: space-between;
     }
@@ -849,12 +861,14 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 768px) {
-.number {
-    padding-left: 2.5em;
-}
-    .socialIcon a{
+    .number {
+        padding-left: 2.5em;
+    }
+
+    .socialIcon a {
         margin-top: 2em;
     }
+
     .wrap_image_button {
         background-position: center;
     }
@@ -914,16 +928,14 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .card-container h3,
-    .calculation-form h2
-    {
-        font-size: 2.5em;
+    .calculation-form h2 {
+        font-size: 3em;
     }
 
     .system-text,
     .system-text-padding .system-text,
     .card-container p,
     .about-calculation p,
-    .sendInput label,
     .wrap_image p,
     .wrap_image_button p,
     .slider-card p,
@@ -934,16 +946,22 @@ input[type=range]::-webkit-slider-runnable-track {
     .copyright p,
     .wrap_image_button button,
     .five-with-icon p,
-    .quotes,form label,
-    .input-annotation p,
-    .header-contacts a {
-        font-size: 2.25em;
+    form label,
+    .input-annotation p {
+        font-size: 2.5em;
     }
+
+    .header-contacts a, .quotes {
+        font-size: 2em;
+
+    }
+
     .system-text, .system-text-padding .system-text {
         width: 100%;
     }
-    .input-container input{
-        font-size: 5em;
+
+    .input-container input {
+        font-size: 3.8em;
     }
 
     .quotes {
@@ -961,7 +979,7 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .sendInput label {
-        font-size: 2.2em;
+        font-size: 2.1em;
         width: fit-content;
     }
 
@@ -984,7 +1002,7 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .socialIcon a,
-    .number:before{
+    .number:before {
         width: 2em;
         height: 2em;
     }
@@ -994,15 +1012,17 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .wrap_image_button .button-shadow,
-    .button-shadow{
+    .button-shadow {
         width: fit-content;
         margin: 1em auto;
-        min-height: 60px;
+        min-height: 3.8em;
     }
-    .slider-container{
+
+    .slider-container {
         background-size: cover;
         background-position: center;
     }
+
     .card-price {
         width: 100%;
     }
@@ -1016,20 +1036,25 @@ input[type=range]::-webkit-slider-runnable-track {
         width: 50%;
         font-weight: bolder;
     }
-    .five-with-icon p:before{
+
+    .five-with-icon p:before {
 
     }
+
     form li {
         width: 95%;
         flex-direction: column;
     }
-    .sendInput input{
+
+    .sendInput input {
         background-color: transparent;
     }
-    .slider-items{
+
+    .slider-items {
         flex-direction: column;
     }
-    .slider-card{
+
+    .slider-card {
         margin: 0;
     }
 
@@ -1055,21 +1080,25 @@ input[type=range]::-webkit-slider-runnable-track {
     .card-price .card-container {
         width: 100%;
     }
-    form .last{
+
+    form .last {
         flex-direction: column-reverse;
     }
-    .input-container .form-button{
+
+    .input-container .form-button {
         width: 80%;
         padding: .5em 1.5em;
         margin: 1em auto 1em 1em;
         font-size: 2.25em;
     }
+
     .header-contacts {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .header-contacts a{
+
+    .header-contacts a {
         margin-top: 2em;
     }
 
@@ -1078,7 +1107,8 @@ input[type=range]::-webkit-slider-runnable-track {
         flex-direction: column;
         align-items: start
     }
-    .text-before-logos .need-padding{
+
+    .text-before-logos .need-padding {
         padding: 8em;
     }
 }
