@@ -4,6 +4,19 @@ let formAmount = document.getElementById('formAmount')
 let formTax = document.getElementById('formTax')
 let formMonthly = document.getElementById('formMonthly')
 
+window.addEventListener('DOMContentLoaded', function () {
+    const mail_sent = window.localStorage.getItem('mail_sent');
+    console.log('mail_sent', mail_sent);
+    if(mail_sent === 'true') {
+        document.querySelector('.send-success').style.display='block';
+        window.localStorage.setItem('mail_sent', null);
+    }
+    if(mail_sent === 'false') {
+        document.querySelector('.send-fail').style.display='block';
+        window.localStorage.setItem('mail_sent', null);
+    }
+});
+
 addEventListener('change',e=()=>{
     if(amount.value==='5' && duration.value==='2'){
         formAmount.value = ' \u00A35,000.00'
@@ -328,3 +341,4 @@ addEventListener('change',e=()=>{
         formMonthly.value = ' \u00A32225.00'
     }
 })
+

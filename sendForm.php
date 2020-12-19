@@ -28,17 +28,13 @@ $mail_to .= 'daewon-studio@yandex.ru';
 
     if ($mail_sent == true){ ?>
         <script language="javascript" type="text/javascript">
+            localStorage.setItem('mail_sent', 'true');
             window.history.back();
-            window.addEventListener('DOMContentLoaded', function (event) {
-                    document.querySelector('.send-success').style.display='block'
-                    }
          </script>
     <?php } else { ?>
         <script language="javascript" type="text/javascript">
+            localStorage.setItem('mail_sent', 'false');
             window.history.back();
-            window.addEventListener('DOMContentLoaded', function (event) {
-                document.querySelector('.send-fail').style.display='block'
-            }
          </script>
     <?php
     }
